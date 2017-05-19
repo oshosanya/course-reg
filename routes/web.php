@@ -81,6 +81,46 @@ Route::group(['middleware' => ['web']], function () {
 
 	Route::post('/admin/semesters/edit/{id}', 'AdminController@semestersUpdate');
 
+
+	Route::get('/admin/units', 'AdminController@units');
+
+    Route::post('/admin/units/create', 'AdminController@unitsCreate');
+
+    Route::get('/admin/units/delete/{id}', 'AdminController@unitsDelete');
+
+    Route::get('/admin/units/edit/{id}', 'AdminController@unitsEdit');
+
+    Route::post('/admin/units/edit/{id}', 'AdminController@unitsUpdate');
+
+
 	Route::get('/admin/registerableCourses', 'AdminController@registerableCourses');
+
+	Route::post('/admin/registerableCourses/create', 'AdminController@registerableCoursesCreate');
+
+	Route::get('/admin/registerableCourses/assign/{id}', 'AdminController@registerableCoursesAssign');
+
+	Route::post('/admin/registerableCourses/assign/{id}', 'AdminController@registerableCoursesAssigned');
+
+
+	Route::get('/admin/userAccounts/student', 'AdminController@userAccountsStudent');
+
+    Route::post('/admin/userAccounts/student/create', 'AdminController@userAccountsStudentCreate');
+
+    Route::get('/admin/userAccounts/student/delete/{id}', 'AdminController@userAccountsStudentDelete');
+
+    Route::get('/admin/userAccounts/student/edit/{id}', 'AdminController@userAccountsStudentEdit');
+
+    Route::post('/admin/userAccounts/student/edit/{id}', 'AdminController@userAccountsStudentUpdate');
+
+
+    Route::get('/admin/userAccounts/staff', 'AdminController@userAccountsStaff');
+
+    Route::post('/admin/userAccounts/staff/create', 'AdminController@userAccountsStaffCreate');
+
+    Route::get('/admin/userAccounts/staff/delete/{id}', 'AdminController@userAccountsStaffDelete');
+
+    Route::get('/admin/userAccounts/staff/edit/{id}', 'AdminController@userAccountsStaffEdit');
+
+    Route::post('/admin/userAccounts/staff/edit/{id}', 'AdminController@userAccountsStaffUpdate');
 
 });

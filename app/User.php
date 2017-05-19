@@ -4,12 +4,13 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-
-use Uuids;
+use Webpatser\Uuid\Uuid;
 
 class User extends Authenticatable
 {
     use Notifiable;
+
+    use Uuids;
 
     /**
      * The attributes that are mass assignable.

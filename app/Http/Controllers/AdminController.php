@@ -3,13 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Webpatser\Uuid\Uuid;
 
 use Auth;
+use Hash;
+
 use \App\Course;
 use \App\Department;
 use \App\Faculty;
 use \App\Level;
 use \App\Semester;
+use \App\RegisterableCourse;
+use \App\Staff;
+use \App\Student;
+use \App\Unit;
+use \App\User;
 
 class AdminController extends Controller
 {
@@ -292,19 +300,247 @@ class AdminController extends Controller
             ]);
     }
 
+    public function units()
+    {
+        $units = Unit::all();
+        return view('admin.units')->with([
+                'units' => $units
+            ]);
+    }
+
+    public function unitsCreate(Request $request)
+    {
+        $this->validate($request, [
+            'unitValue' => 'required|unique:units,value|max:255',
+        ]);
+        $unit = new Unit;
+        $unit->value = $request->input('unitValue');
+        $unit->save();
+        return redirect('admin/units')->with([
+                'success' => 'Course Unit added successfully'
+            ]);
+    }
+
+    public function unitsDelete($id)
+    {
+        $unit = Unit::find($id);
+        $unit->delete();
+        return redirect('admin/units')->with([
+                'success' => 'Course Unit deleted successfully'
+            ]);
+    }
+
+    public function unitsEdit($id)
+    {
+        $unit = Unit::find($id);
+        return view('admin.unitsEdit')->with([
+                'unit' => $unit
+            ]);
+    }
+
+    public function unitsUpdate(Request $request, $id)
+    {
+        $this->validate($request, [
+            'unitValue' => 'required|max:255',
+        ]);
+        $unit = Unit::find($id);
+        $unit->value = $request->input('unitValue');
+        $unit->save();
+        return redirect('admin/units')->with([
+                'success' => 'Course Unit updated successfully'
+            ]);
+    }
+
     public function registerableCourses()
     {
         $courses = Course::all();
         $departments = Department::all();
         $levels = Level::all();
-        $registerableCourses = RegisterableCourse::all()->paginate(20);
+        $registerableCourses = RegisterableCourse::paginate(20);
         $semesters = Semester::all();
+        $units = Unit::all();
         return view('admin.registerableCourses')->with([
                 'courses' => $courses,
                 'departments' => $departments,
                 'levels' => $levels,
                 'registerableCourses' => $registerableCourses,
-                'semesters' => $semesters
+                'semesters' => $semesters,
+                'units' => $units
+            ]);
+    }
+
+    public function registerableCoursesCreate(Request $request)
+    {
+        $this->validate($request, [
+            'courseId' => 'required|max:4',
+            'departmentId' => 'required|max:4',
+            'semesterId' => 'required|max:4',
+            'levelId' => 'required|max:4',
+            'unitId' => 'required|max:4',
+        ]);
+        $r = new RegisterableCourse;
+        $r->id_course = $request->input('courseId');
+        $r->id_department = $request->input('departmentId');
+        $r->id_semester = $request->input('semesterId');
+        $r->id_level = $request->input('levelId');
+        $r->id_unit = $request->input('unitId');
+        $r->save();
+        return redirect('admin/registerableCourses')->with([
+                'success' => 'Course added successfully'
+            ]);
+    }
+
+    public function registerableCoursesAssign($id)
+    {
+        $registerableCourse = RegisterableCourse::find($id);
+        $users = User::where('role', '=', 3)->get();
+        return view('admin.registerableCoursesAssign')->with([
+                'registerableCourse' => $registerableCourse,
+                'users' => $users
+            ]);
+    }
+
+    public function registerableCoursesAssigned(Request $request, $id)
+    {
+        $registerableCourse = RegisterableCourse::find($id);
+        $registerableCourse->id_user = $request->input('staffId');
+        $registerableCourse->save();
+        return redirect('admin/registerableCourses')->with([
+                'success' => 'Course assigned to '.Staff::where('id_user', '=', $request->input('staffId'))->first()->last_name
+            ]);
+    }
+
+    public function userAccountsStudent()
+    {
+        $levels = Level::all();
+        $users = User::where('role', '=', '2')->paginate(30);
+        $departments = Department::all();
+        return view('admin.students')->with([
+                'departments' => $departments,
+                'levels' => $levels,
+                'users' => $users 
+            ]);
+    }
+
+    public function userAccountsStudentCreate(Request $request)
+    {
+        $this->validate($request, [
+            'studentLastName' => 'required|max:32',
+            'studentFirstName' => 'required|max:32',
+            'studentOtherName' => 'required|max:32',
+            'studentEmail' => 'required|email|unique:users,email|max:64',
+            'studentMatricNo' => 'required|max:16',
+            'studentDepartment' => 'required',
+            'studentLevel' => 'required'
+        ]);
+
+        $user = new User;
+        $user->email = $request->input('studentEmail');
+        $user->username = $request->input('studentMatricNo');
+        $user->password = Hash::make($request->input('studentLastName'));
+        $user->role = 2;
+        $user->save();
+
+        $student = new Student;
+        $student->last_name = $request->input('studentLastName');
+        $student->first_name = $request->input('studentFirstName');
+        $student->other_name = $request->input('studentOtherName');
+        $student->id_user = $user->id;
+        $student->matric_no = $request->input('studentMatricNo');
+        $student->id_department = $request->input('studentDepartment');
+        $student->id_level = $request->input('studentLevel');
+        $student->save();
+
+        return redirect('/admin/userAccounts/student')->with([
+                'success' => 'Student Account created successfully'
+            ]);
+    }
+
+    public function userAccountsStudentEdit($id)
+    {
+        $levels = Level::all();
+        $user = User::find($id);
+        $departments = Department::all();
+        return view('admin.studentsEdit')->with([
+                'departments' => $departments,
+                'levels' => $levels,
+                'user' => $user 
+            ]);
+    }
+
+    public function userAccountsStudentUpdate(Request $request, $id)
+    {
+        $this->validate($request, [
+            'studentLastName' => 'required|max:32',
+            'studentFirstName' => 'required|max:32',
+            'studentOtherName' => 'required|max:32',
+            'studentEmail' => 'required|email|max:64',
+            'studentMatricNo' => 'required|max:16',
+            'studentDepartment' => 'required',
+            'studentLevel' => 'required'
+        ]);
+
+        $user = User::find($id);
+        $user->email = $request->input('studentEmail');
+        $user->username = $request->input('studentMatricNo');
+        $user->password = Hash::make($request->input('studentLastName'));
+        $user->role = 2;
+        $user->save();
+
+        $student = Student::where('id_user', '=', $id)->first();
+        $student->last_name = $request->input('studentLastName');
+        $student->first_name = $request->input('studentFirstName');
+        $student->other_name = $request->input('studentOtherName');
+        $student->id_user = $user->id;
+        $student->matric_no = $request->input('studentMatricNo');
+        $student->id_department = $request->input('studentDepartment');
+        $student->id_level = $request->input('studentLevel');
+        $student->save();
+
+        return redirect('/admin/userAccounts/student')->with([
+                'success' => 'Student Account edited successfully'
+            ]);
+    }
+
+    public function userAccountsStaff()
+    {
+        $levels = Level::all();
+        $users = User::where('role', '=', '3')->paginate(30);
+        $departments = Department::all();
+        return view('admin.staffs')->with([
+                'departments' => $departments,
+                'levels' => $levels,
+                'users' => $users 
+            ]);
+    }
+
+    public function userAccountsStaffCreate(Request $request)
+    {
+        $this->validate($request, [
+            'staffLastName' => 'required|max:32',
+            'staffFirstName' => 'required|max:32',
+            'staffOtherName' => 'required|max:32',
+            'staffEmail' => 'required|email|unique:users,email|max:64',
+            'staffDepartment' => 'required',
+        ]);
+
+        $user = new User;
+        $user->email = $request->input('staffEmail');
+        $user->username = strtolower($request->input('staffLastName').$request->input('staffFirstName'));
+        $user->password = Hash::make($request->input('staffLastName'));
+        $user->role = 3;
+        $user->save();
+
+        $staff = new Staff;
+        $staff->last_name = $request->input('staffLastName');
+        $staff->first_name = $request->input('staffFirstName');
+        $staff->other_name = $request->input('staffOtherName');
+        $staff->id_user = $user->id;
+        $staff->id_department = $request->input('staffDepartment');
+        $staff->save();
+
+        return redirect('/admin/userAccounts/staff')->with([
+                'success' => 'Staff Account created successfully'
             ]);
     }
 }

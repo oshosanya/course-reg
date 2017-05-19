@@ -55,12 +55,22 @@
           <li><a href="/admin/levels"><i class="fa fa-circle-o"></i> Levels</a></li>
           <li><a href="/admin/courses"><i class="fa fa-circle-o"></i> Courses</a></li>
           <li><a href="/admin/semesters"><i class="fa fa-circle-o"></i> Semesters</a></li>
+          <li><a href="/admin/units"><i class="fa fa-circle-o"></i> Units</a></li>
         </ul>
       </li>
       <li>
         <a href="/admin/registerableCourses">
           <i class="fa fa-th"></i> <span>Registerable Courses</span>
         </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-th"></i> <span>User Accounts</span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="/admin/userAccounts/student"><i class="fa fa-circle-o"></i> Student</a></li>
+          <li><a href="/admin/userAccounts/staff"><i class="fa fa-circle-o"></i> Staff</a></li>
+        </ul>
       </li>
       <li class="treeview">
         <a href="#">
