@@ -14,6 +14,8 @@ use \App\Faculty;
 use \App\Level;
 use \App\Semester;
 use \App\RegisterableCourse;
+use \App\Session;
+use \App\Setting;
 use \App\Staff;
 use \App\Student;
 use \App\Unit;
@@ -21,10 +23,19 @@ use \App\User;
 
 class AdminController extends Controller
 {
+    public function __construct()
+    {
+        $this->currentSession = Setting::where('parameter', '=', 'current_session')->first()->value;
+    }
+
     public function doLogin(Request $request)
     {
     	if (Auth::attempt(['email' => $request->input('email'), 'password' => $request->input('password')])) {
             return redirect()->intended('admin/dashboard');
+        }
+        else
+        {
+            return redirect('/admin')->with('warning', 'Login credentials incorrect');
         }
     }
 
@@ -359,13 +370,15 @@ class AdminController extends Controller
         $registerableCourses = RegisterableCourse::paginate(20);
         $semesters = Semester::all();
         $units = Unit::all();
+        $sessions = Session::all();
         return view('admin.registerableCourses')->with([
                 'courses' => $courses,
                 'departments' => $departments,
                 'levels' => $levels,
                 'registerableCourses' => $registerableCourses,
                 'semesters' => $semesters,
-                'units' => $units
+                'units' => $units,
+                'sessions' => $sessions,
             ]);
     }
 
@@ -377,6 +390,7 @@ class AdminController extends Controller
             'semesterId' => 'required|max:4',
             'levelId' => 'required|max:4',
             'unitId' => 'required|max:4',
+            'sessionId' => 'required|max:4'
         ]);
         $r = new RegisterableCourse;
         $r->id_course = $request->input('courseId');
@@ -384,6 +398,7 @@ class AdminController extends Controller
         $r->id_semester = $request->input('semesterId');
         $r->id_level = $request->input('levelId');
         $r->id_unit = $request->input('unitId');
+        $r->id_session = $request->input('sessionId');
         $r->save();
         return redirect('admin/registerableCourses')->with([
                 'success' => 'Course added successfully'

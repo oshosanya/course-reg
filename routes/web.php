@@ -15,9 +15,17 @@ Route::get('/admin', function () {
     return view('admin.login');
 });
 
+Route::get('/staff', function () {
+    return view('staff.login');
+});
+
+Route::get('/student', function () {
+    return view('student.login');
+});
+
 Route::get('/test', function()
 {
-	return Uuid::generate(4);
+	return Hash::make('foluke');
 });
 
 //Admin Routes
@@ -122,5 +130,35 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/admin/userAccounts/staff/edit/{id}', 'AdminController@userAccountsStaffEdit');
 
     Route::post('/admin/userAccounts/staff/edit/{id}', 'AdminController@userAccountsStaffUpdate');
+
+});
+
+//Staff Routes
+Route::group(['middleware' => ['web']], function () {
+
+	Route::post('/staff/login', 'StaffController@doLogin');
+
+	Route::get('/staff/dashboard', 'StaffController@dashboard');
+
+	Route::get('/staff/account', 'StaffController@account');
+
+	Route::get('/staff/courses', 'StaffController@courses');
+
+	Route::get('/staff/results', 'StaffController@results');
+
+	Route::post('/staff/results', 'StaffController@storeResults');
+
+//Student Routes
+Route::group(['middleware' => ['web']], function () {
+
+	Route::post('/student/login', 'StudentController@doLogin');
+
+	Route::get('/student/dashboard', 'StudentController@dashboard');
+
+	Route::get('/student/courses', 'StudentController@courses');
+
+	Route::get('/student/courseRegistration', 'StudentController@courseRegistration');
+
+	Route::post('/student/courseRegistration', 'StudentController@courseRegistrationCreate');
 
 });

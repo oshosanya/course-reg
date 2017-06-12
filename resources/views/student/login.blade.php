@@ -1,4 +1,4 @@
-@extends('admin.layouts.layout-empty')
+@extends('student.layouts.layout-empty')
 @section('content')
 <script src="http://mymaplist.com/js/vendor/TweenLite.min.js"></script>
 <!-- This is a very simple parallax effect achieved by simple CSS 3 multiple backgrounds, made by http://twitter.com/msurguy -->
@@ -11,17 +11,11 @@
 			    	<h3 class="panel-title">Please sign in</h3>
 			 	</div>
 			  	<div class="panel-body">
-			  		@if (session('warning'))
-					    <div class="alert alert-warning alert-dismissible" role="alert">
-					    	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					        {{ session('warning') }}
-					    </div>
-					@endif
-			    	<form accept-charset="UTF-8" role="form" method="post" action="/admin/login">
+			    	<form accept-charset="UTF-8" role="form" method="post" action="/student/login">
 			    	{{ csrf_field() }}
                     <fieldset>
 			    	  	<div class="form-group">
-			    		    <input class="form-control" placeholder="E-mail" name="email" type="text">
+			    		    <input class="form-control" placeholder="Matric Number" name="username" type="text">
 			    		</div>
 			    		<div class="form-group">
 			    			<input class="form-control" placeholder="Password" name="password" type="password" value="">

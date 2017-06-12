@@ -50,6 +50,16 @@
 						</div>
 						<div class="row">
 				    		<div class="col-sm-8">
+					    		<select class="form-control" name="sessionId">
+					    			<option value="">SESSION</option>
+					    			@foreach($sessions as $s)
+					    			<option value="{{ $s->id }}">{{ $s->name }}</option>
+					    			@endforeach
+					    		</select>
+							</div>
+						</div>
+						<div class="row">
+				    		<div class="col-sm-8">
 					    		<select class="form-control" name="unitId">
 					    			<option value="">UNIT</option>
 					    			@foreach($units as $u)

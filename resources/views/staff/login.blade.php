@@ -11,13 +11,7 @@
 			    	<h3 class="panel-title">Please sign in</h3>
 			 	</div>
 			  	<div class="panel-body">
-			  		@if (session('warning'))
-					    <div class="alert alert-warning alert-dismissible" role="alert">
-					    	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					        {{ session('warning') }}
-					    </div>
-					@endif
-			    	<form accept-charset="UTF-8" role="form" method="post" action="/admin/login">
+			    	<form accept-charset="UTF-8" role="form" method="post" action="/staff/login">
 			    	{{ csrf_field() }}
                     <fieldset>
 			    	  	<div class="form-group">

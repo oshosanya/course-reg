@@ -212,8 +212,7 @@
             <li class="user-header">
               <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
               <p>
-                Alexander Pierce - Web Developer
-                <small>Member since Nov. 2012</small>
+                {{ Auth::user()->username }} - Course Instructor
               </p>
             </li>
             <!-- Menu Body -->
