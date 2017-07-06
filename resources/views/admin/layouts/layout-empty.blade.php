@@ -8,6 +8,14 @@
 	    <link href="/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
 	    <link href="/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
 	    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="/css/animate.css">
+        <style type="text/css">
+            #login {
+              -vendor-animation-duration: 3s;
+              -vendor-animation-delay: 4s;
+              -vendor-animation-iteration-count: infinite;
+            }
+        </style>
     </head>
     <body class="skin-blue sidebar-mini">
     	@yield('content')
