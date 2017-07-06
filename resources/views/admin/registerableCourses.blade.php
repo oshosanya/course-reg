@@ -68,6 +68,13 @@
 					    		</select>
 							</div>
 						</div>
+						<div class="row">
+							<div class="col-sm-8">
+					    		<div class="input-group input-group-sm col-sm-8">	
+					    			<input type="text" class="form-control" placeholder="Course Code" name="courseCode" value="">
+					    		</div>
+					    	</div>
+						</div>
 						<div class="col-sm-4">
 							<button class="btn btn-success" type="submit">Submit</button>
 						</div>
@@ -83,6 +90,7 @@
 					<tr>
 						<th>ID</th>
 						<th>Course</th>
+						<th>Course Code</th>
 						<th>Department</th>
 						<th>Semester</th>
 						<th>Level</th>
@@ -96,11 +104,12 @@
 					<tr>
 						<td>{{ $r->id }}</td>
 						<td>{{ \App\Course::find($r->id_course)->name }}</td>
+						<td>{{ $r->course_code }}</td>
 						<td>{{ \App\Department::find($r->id_department)->name }}</td>
 						<td>{{ \App\Semester::find($r->id_semester)->name }}</td>
 						<td>{{ \App\Level::find($r->id_level)->name }}</td>
 						<td>{{ @\App\Staff::where('id_user', '=', $r->id_user)->first()->last_name }} {{ @\App\Staff::where('id_user', '=', $r->id_user)->first()->first_name }}</td>
-						<td><a href="/admin/registerableCourses/edit/{{ $r->id }}">Edit</a>|<a href="/admin/registerableCourses/assign/{{ $r->id }}">Assign Course</a>|<a href="/admin/registerableCourses/delete/{{ $r->id }}" class="deleteBtn">Delete</a></td>
+						<td><a href="/admin/registerableCourses/assign/{{ $r->id }}">Assign Course</a>|<a href="/admin/registerableCourses/delete/{{ $r->id }}" class="deleteBtn">Delete</a></td>
 					</tr>
 					@endforeach
 				</tbody>

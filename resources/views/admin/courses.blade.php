@@ -15,13 +15,6 @@
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-sm-8">
-					    		<div class="input-group input-group-sm col-sm-8">	
-					    			<input type="text" class="form-control" name="courseCode" placeholder="Course Code" aria-describedby="sizing-addon1">
-					    		</div>
-					    	</div>
-						</div>
 						<div class="col-sm-4">
 							<button class="btn btn-success" type="submit">Submit</button>
 						</div>
@@ -37,7 +30,6 @@
 					<tr>
 						<td>ID</td>
 						<td>Course</td>
-						<td>Course Code</td>
 						<td>Updated At</td>
 						<th></th>
 					</tr>
@@ -47,7 +39,6 @@
 					<tr>
 						<td>{{ $c->id }}</td>
 						<td>{{ $c->name }}</td>
-						<td>{{ $c->code }}</td>
 						<td>{{ $c->updated_at }}</td>
 						<td><a href="/admin/courses/edit/{{ $c->id }}">Edit</a>|<a href="/admin/courses/delete/{{ $c->id }}" class="deleteBtn">Delete</a></td>
 					</tr>

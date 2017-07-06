@@ -1,0 +1,2098 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"stud",
+				"student"
+			],
+			[
+				"ta",
+				"table-bordered"
+			],
+			[
+				"id",
+				"id_user"
+			],
+			[
+				"courseNam",
+				"courseNames"
+			],
+			[
+				"res",
+				"resultPrint"
+			],
+			[
+				"Admn",
+				"AdminController"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"Stud",
+				"StudentController"
+			],
+			[
+				"se",
+				"semester"
+			],
+			[
+				"curren",
+				"currentSemester"
+			],
+			[
+				"new",
+				"newResult"
+			],
+			[
+				"stude",
+				"studentId"
+			],
+			[
+				"curre",
+				"currentSession"
+			],
+			[
+				"cu",
+				"currentSemester"
+			],
+			[
+				"reu",
+				"results"
+			],
+			[
+				"Staff",
+				"StaffController"
+			],
+			[
+				"Reg",
+				"RegisteredCourse"
+			],
+			[
+				"cure",
+				"currentSession"
+			],
+			[
+				"id_",
+				"id_user"
+			],
+			[
+				"ci",
+				"current_session"
+			],
+			[
+				"id_se",
+				"id_session"
+			],
+			[
+				"regis",
+				"registered"
+			],
+			[
+				"course",
+				"courseRegistration"
+			],
+			[
+				"Studen",
+				"StudentController"
+			],
+			[
+				"Se",
+				"Settings"
+			],
+			[
+				"Staf",
+				"StaffController"
+			],
+			[
+				"re",
+				"registerableCourse"
+			],
+			[
+				"user",
+				"userAccounts"
+			],
+			[
+				"studen",
+				"studentLevel"
+			],
+			[
+				"stu",
+				"studentLastName"
+			],
+			[
+				"dep",
+				"departments"
+			],
+			[
+				"level",
+				"Level"
+			],
+			[
+				"depart",
+				"departments"
+			],
+			[
+				"faculty",
+				"facultyId"
+			],
+			[
+				"depa",
+				"department"
+			],
+			[
+				"fac",
+				"faculties"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"aler",
+				"alert-dismissible"
+			],
+			[
+				"Admin",
+				"AdminController"
+			],
+			[
+				"ro",
+				"rows\tAttr"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"leve",
+				"levels"
+			],
+			[
+				"act",
+				"activation"
+			],
+			[
+				"User",
+				"UserActivation"
+			],
+			[
+				"create",
+				"createToken"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "resources/views/admin/registerableCourses.blade.php",
+			"settings":
+			{
+				"buffer_size": 4408,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/AdminController.php",
+			"settings":
+			{
+				"buffer_size": 18647,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/admin/resultSheet.blade.php",
+			"settings":
+			{
+				"buffer_size": 1257,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Result.php",
+			"settings":
+			{
+				"buffer_size": 770,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Student.php",
+			"settings":
+			{
+				"buffer_size": 1761,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Course.php",
+			"settings":
+			{
+				"buffer_size": 1277,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Grade.php",
+			"settings":
+			{
+				"buffer_size": 327,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Cgpa.php",
+			"settings":
+			{
+				"buffer_size": 893,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/StudentController.php",
+			"settings":
+			{
+				"buffer_size": 5729,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/admin/results.blade.php",
+			"settings":
+			{
+				"buffer_size": 1394,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/admin/courses.blade.php",
+			"settings":
+			{
+				"buffer_size": 1694,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/admin/coursesEdit.blade.php",
+			"settings":
+			{
+				"buffer_size": 807,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/admin/levels.blade.php",
+			"settings":
+			{
+				"buffer_size": 1640,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/admin/layouts/sidebar.blade.php",
+			"settings":
+			{
+				"buffer_size": 8344,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "routes/web.php",
+			"settings":
+			{
+				"buffer_size": 5774,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "$_COOKIE = array[5]\n\t$_COOKIE['_ga'] = (string) GA1.1.2074509755.1493724331\n\t$_COOKIE['mjx_menu'] = (string) zscale:125%&;renderer:HTML-CSS&;FastPreview:false&;explorer:true&;collapsible:true&;assistiveMML:false\n\t$_COOKIE['XDEBUG_SESSION'] = (string) sublime.xdebug\n\t$_COOKIE['XSRF-TOKEN'] = (string) eyJpdiI6ImtxRTVmcU1CeXAxUWNFc2tNOUJ4UkE9PSIsInZhbHVlIjoiQVE2WllXN080bTFadWx3UkFZdmJudHdrUTRHMHR5QTUrRVAxMUd1Q1wvYjBQZGhaSFZtQUd1eWF3d003M0FWK2tldVdwbmtBQnlmaTdYWHJcL2VOSG1jZz09IiwibWFjIjoiNDcwMWEwZDkzMGMzYjljYzQyNjQ3MmVhOTE4Yzg0ODJmMDYwMGIxZjAxZDY1MTAyNjk3NWFjYTZlYzc4OGE5ZiJ9\n\t$_COOKIE['laravel_session'] = (string) eyJpdiI6IlZua3NOUG1ldFZcL1NPY1BJYkdTV0VBPT0iLCJ2YWx1ZSI6InZDMXZBbWZLOEIrUjU3NDA5K2hDcitPQnBWanJ6dkN4VEVBRm5qMG9PV3h3RGtsOWoxTVp5aWFOQzVkOG9WdWErWTdHRkdNVmRJMk9kc2U5am8xRmhRPT0iLCJtYWMiOiJmM2ZkMDIxMjAwODdhYTU4NzZjNDFmMTUyNzZjYTQ3MTQ2ZWU5NjIzNWMzMzk0ODc1NGU3Mjk3OTRlOGE5YTliIn0=\n$_ENV = array[0]\n$_FILES = array[0]\n$_GET = array[4]\n\t$_GET['_token'] = (string) jR30m1yGehnYCw4yzFqltrz9WOONZua2TCOHVecC\n\t$_GET['id_level'] = (string) 1\n\t$_GET['id_semester'] = (string) 1\n\t$_GET['id_session'] = (string) 2\n$_POST = array[0]\n$_REQUEST = array[4]\n\t$_REQUEST['_token'] = (string) jR30m1yGehnYCw4yzFqltrz9WOONZua2TCOHVecC\n\t$_REQUEST['id_level'] = (string) 1\n\t$_REQUEST['id_semester'] = (string) 1\n\t$_REQUEST['id_session'] = (string) 2\n$_SERVER = array[26]\n\t$_SERVER['DOCUMENT_ROOT'] = (string) /home/oshosanya/projects/course-reg/public\n\t$_SERVER['REMOTE_ADDR'] = (string) 127.0.0.1\n\t$_SERVER['REMOTE_PORT'] = (string) 52972\n\t$_SERVER['SERVER_SOFTWARE'] = (string) PHP 7.0.18-0ubuntu0.16.10.1 Development Server\n\t$_SERVER['SERVER_PROTOCOL'] = (string) HTTP/1.1\n\t$_SERVER['SERVER_NAME'] = (string) 127.0.0.1\n\t$_SERVER['SERVER_PORT'] = (string) 8000\n\t$_SERVER['REQUEST_URI'] = (string) /admin/resultPrint?_token=jR30m1yGehnYCw4yzFqltrz9WOONZua2TCOHVecC&id_level=1&id_semester=1&id_session=2\n\t$_SERVER['REQUEST_METHOD'] = (string) GET\n\t$_SERVER['SCRIPT_NAME'] = (string) /index.php\n\t$_SERVER['SCRIPT_FILENAME'] = (string) /home/oshosanya/projects/course-reg/public/index.php\n\t$_SERVER['PATH_INFO'] = (string) /admin/resultPrint\n\t$_SERVER['PHP_SELF'] = (string) /index.php/admin/resultPrint\n\t$_SERVER['QUERY_STRING'] = (string) _token=jR30m1yGehnYCw4yzFqltrz9WOONZua2TCOHVecC&id_level=1&id_semester=1&id_session=2\n\t$_SERVER['HTTP_HOST'] = (string) localhost:8000\n\t$_SERVER['HTTP_CONNECTION'] = (string) keep-alive\n\t$_SERVER['HTTP_CACHE_CONTROL'] = (string) max-age=0\n\t$_SERVER['HTTP_UPGRADE_INSECURE_REQUESTS'] = (string) 1\n\t$_SERVER['HTTP_USER_AGENT'] = (string) Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36\n\t$_SERVER['HTTP_ACCEPT'] = (string) text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\n\t$_SERVER['HTTP_REFERER'] = (string) http://localhost:8000/admin/results\n\t$_SERVER['HTTP_ACCEPT_ENCODING'] = (string) gzip, deflate, sdch, br\n\t$_SERVER['HTTP_ACCEPT_LANGUAGE'] = (string) en-US,en;q=0.8\n\t$_SERVER['HTTP_COOKIE'] = (string) _ga=GA1.1.2074509755.1493724331; mjx.menu=zscale%3A125%25%26%3Brenderer%3AHTML-CSS%26%3BFastPreview%3Afalse%26%3Bexplorer%3Atrue%26%3Bcollapsible%3Atrue%26%3BassistiveMML%3Afalse; XDEBUG_SESSION=sublime.xdebug; XSRF-TOKEN=eyJpdiI6ImtxRTVmcU1CeXAxUWNFc2tNOUJ4UkE9PSIsInZhbHVlIjoiQVE2WllXN080bTFadWx3UkFZdmJudHdrUTRHMHR5QTUrRVAxMUd1Q1wvYjBQZGhaSFZtQUd1eWF3d003M0FWK2tldVdwbmtBQnlmaTdYWHJcL2VOSG1jZz09IiwibWFjIjoiNDcwMWEwZDkzMGMzYjljYzQyNjQ3MmVhOTE4Yzg0ODJmMDYwMGIxZjAxZDY1MTAyNjk3NWFjYTZlYzc4OGE5ZiJ9; laravel_session=eyJpdiI6IlZua3NOUG1ldFZcL1NPY1BJYkdTV0VBPT0iLCJ2YWx1ZSI6InZDMXZBbWZLOEIrUjU3NDA5K2hDcitPQnBWanJ6dkN4VEVBRm5qMG9PV3h3RGtsOWoxTVp5aWFOQzVkOG9WdWErWTdHRkdNVmRJMk9kc2U5am8xRmhRPT0iLCJtYWMiOiJmM2ZkMDIxMjAwODdhYTU4NzZjNDFmMTUyNzZjYTQ3MTQ2ZWU5NjIzNWMzMzk0ODc1NGU3Mjk3OTRlOGE5YTliIn0%3D\n\t$_SERVER['REQUEST_TIME_FLOAT'] = (float) 1498658733.6207\n\t$_SERVER['REQUEST_TIME'] = (int) 1498658733\n$GLOBALS = array[14]\n\t$GLOBALS['_GET'] = array[4]\n\t\t...\n\t$GLOBALS['_POST'] = array[0]\n\t$GLOBALS['_COOKIE'] = array[5]\n\t\t...\n\t$GLOBALS['_FILES'] = array[0]\n\t$GLOBALS['_ENV'] = array[0]\n\t$GLOBALS['_REQUEST'] = array[4]\n\t\t...\n\t$GLOBALS['_SERVER'] = array[26]\n\t\t...\n\t$GLOBALS['uri'] = (string) /admin/resultPrint\n\t$GLOBALS['app'] = Illuminate\\Foundation\\Application[32]\n\t\t...\n\t$GLOBALS['kernel'] = App\\Http\\Kernel[7]\n\t\t...\n\t$GLOBALS['request'] = Illuminate\\Http\\Request[35]\n\t\t...\n\t$GLOBALS['GLOBALS'] = <array>\n\t$GLOBALS['__composer_autoload_files'] = array[9]\n\t\t...\n\t...\n$c = (int) 5\n$ca = App\\Result[33]\n\t$ca::resolver = Illuminate\\Database\\DatabaseManager[4]\n\t\t...\n\t$ca::dispatcher = Illuminate\\Events\\Dispatcher[4]\n\t\t...\n\t$ca::booted = array[8]\n\t\t...\n\t$ca::globalScopes = array[0]\n\t$ca::snakeAttributes = (bool) 1\n\t$ca::mutatorCache = array[0]\n\t$ca::manyMethods = array[5]\n\t\t...\n\t$ca::unguarded = (bool) 0\n\t$ca->connection = (string) mysql\n\t$ca->table = <null>\n\t$ca->primaryKey = (string) id\n\t$ca->keyType = (string) int\n\t$ca->incrementing = (bool) 1\n\t$ca->with = array[0]\n\t$ca->withCount = array[0]\n\t$ca->perPage = (int) 15\n\t$ca->exists = (bool) 1\n\t$ca->wasRecentlyCreated = (bool) 0\n\t$ca->attributes = array[10]\n\t\t...\n\t$ca->original = array[10]\n\t\t...\n\t$ca->casts = array[0]\n\t$ca->dates = array[0]\n\t$ca->dateFormat = <null>\n\t$ca->appends = array[0]\n\t$ca->events = array[0]\n\t$ca->observables = array[0]\n\t$ca->relations = array[0]\n\t$ca->touches = array[0]\n\t$ca->timestamps = (bool) 1\n\t$ca->hidden = array[0]\n\t$ca->visible = array[0]\n\t$ca->fillable = array[0]\n\t...\n$level = (string) 1\n$s = (string) 77760bc0-3c89-11e7-8d90-49b73785a136\n$semester = (string) 1\n$session = (string) 2\n$totalScore = <uninitialized>\n",
+			"settings":
+			{
+				"buffer_size": 5629,
+				"line_ending": "Unix",
+				"name": "Xdebug Context",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "Xdebug Watch",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "[0] file:///home/oshosanya/projects/course-reg/app/Result.php.App\\Result::studentScore:30\n[1] file:///home/oshosanya/projects/course-reg/storage/framework/views/87e0a3eea0a25de703b431c0ea00575be066711e.php.include:34\n[2] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php.Illuminate\\View\\Engines\\PhpEngine->evaluatePath:42\n[3] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php.Illuminate\\View\\Engines\\CompilerEngine->get:59\n[4] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/View/View.php.Illuminate\\View\\View->getContents:137\n[5] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/View/View.php.Illuminate\\View\\View->renderContents:120\n[6] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/View/View.php.Illuminate\\View\\View->render:85\n[7] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Http/Response.php.Illuminate\\Http\\Response->setContent:38\n[8] file:///home/oshosanya/projects/course-reg/vendor/symfony/http-foundation/Response.php.Symfony\\Component\\HttpFoundation\\Response->__construct:225\n[9] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Routing/Router.php.Illuminate\\Routing\\Router->prepareResponse:602\n[10] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Routing/Router.php.Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}:559\n[11] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php.Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}:30\n[12] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php.Illuminate\\Routing\\Middleware\\SubstituteBindings->handle:41\n[13] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php.Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}:148\n[14] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php.Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}:53\n[15] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php.Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle:65\n[16] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php.Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}:148\n[17] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php.Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}:53\n[18] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php.Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle:49\n[19] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php.Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}:148\n[20] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php.Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}:53\n[21] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php.Illuminate\\Session\\Middleware\\StartSession->handle:64\n[22] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php.Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}:148\n[23] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php.Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}:53\n[24] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php.Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle:37\n[25] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php.Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}:148\n[26] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php.Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}:53\n[27] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php.Illuminate\\Cookie\\Middleware\\EncryptCookies->handle:59\n[28] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php.Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}:148\n[29] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php.Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}:53\n[30] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php.Illuminate\\Pipeline\\Pipeline->then:102\n[31] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Routing/Router.php.Illuminate\\Routing\\Router->runRouteWithinStack:561\n[32] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Routing/Router.php.Illuminate\\Routing\\Router->dispatchToRoute:520\n[33] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Routing/Router.php.Illuminate\\Routing\\Router->dispatch:498\n[34] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php.Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}:174\n[35] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php.Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}:30\n[36] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php.Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle:30\n[37] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php.Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}:148\n[38] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php.Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}:53\n[39] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php.Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle:30\n[40] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php.Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}:148\n[41] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php.Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}:53\n[42] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php.Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle:27\n[43] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php.Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}:148\n[44] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php.Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}:53\n[45] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php.Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle:46\n[46] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php.Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}:148\n[47] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php.Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}:53\n[48] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php.Illuminate\\Pipeline\\Pipeline->then:102\n[49] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php.Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter:149\n[50] file:///home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php.Illuminate\\Foundation\\Http\\Kernel->handle:116\n[51] file:///home/oshosanya/projects/course-reg/public/index.php.require_once:53\n[52] file:///home/oshosanya/projects/course-reg/server.php.{main}:21\n",
+			"settings":
+			{
+				"buffer_size": 8765,
+				"line_ending": "Unix",
+				"name": "Xdebug Stack",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "=> /home/oshosanya/projects/course-reg/app/Result.php\n\t|+| 30\n",
+			"settings":
+			{
+				"buffer_size": 62,
+				"line_ending": "Unix",
+				"name": "Xdebug Breakpoint",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 277.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"skin",
+				"UI: Select Skin"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/oshosanya/projects/course-reg",
+		"/home/oshosanya/projects/course-reg/app",
+		"/home/oshosanya/projects/course-reg/app/Http/Controllers",
+		"/home/oshosanya/projects/course-reg/resources",
+		"/home/oshosanya/projects/course-reg/resources/views",
+		"/home/oshosanya/projects/course-reg/resources/views/admin",
+		"/home/oshosanya/projects/course-reg/resources/views/student",
+		"/home/oshosanya/projects/course-reg/resources/views/student/layouts"
+	],
+	"file_history":
+	[
+		"/home/oshosanya/projects/course-reg/course-reg.sublime-project",
+		"/home/oshosanya/projects/course-reg/app/Staff.php",
+		"/home/oshosanya/projects/course-reg/.env",
+		"/home/oshosanya/projects/course-reg/resources/views/admin/registerableCoursesAssign.blade.php",
+		"/home/oshosanya/projects/course-reg/app/Result.php",
+		"/home/oshosanya/projects/course-reg/app/Http/Controllers/StudentController.php",
+		"/home/oshosanya/projects/course-reg/resources/views/student/resultSheet.blade.php",
+		"/home/oshosanya/projects/course-reg/app/Http/Controllers/ResultController.php",
+		"/home/oshosanya/projects/course-reg/app/Grade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/student/resultPrint.blade.php",
+		"/home/oshosanya/projects/course-reg/app/Cgpa.php",
+		"/home/oshosanya/projects/course-reg/resources/views/student/dashboard.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/staff/layouts/sidebar.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/student/account.blade.php",
+		"/home/oshosanya/projects/course-reg/config/filesystems.php",
+		"/home/oshosanya/projects/course-reg/app/Http/Controllers/StaffController.php",
+		"/home/oshosanya/projects/course-reg/routes/web.php",
+		"/home/oshosanya/projects/course-reg/resources/views/student/layouts/sidebar.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/student/result.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/student/layouts/layout.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/student/layouts/layout-empty.blade.php",
+		"/home/oshosanya/projects/course-reg/app/Http/Controllers/AdminController.php",
+		"/home/oshosanya/projects/course-reg/resources/views/student/courseRegistration.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/staff/courses.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/admin/coursesEdit.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/staff/results.blade.php",
+		"/home/oshosanya/projects/course-reg/app/Student.php",
+		"/home/oshosanya/projects/course-reg/app/RegisteredCourse.php",
+		"/home/oshosanya/projects/course-reg/package.json",
+		"/home/oshosanya/projects/course-reg/composer.json",
+		"/home/oshosanya/projects/course-reg/storage/framework/views/58b5494325d7e437ecd495a6710e426d7602c60f.php",
+		"/home/oshosanya/projects/course-reg/resources/views/staff/layouts/header.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/student/courses.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/admin/registerableCourses.blade.php",
+		"/home/oshosanya/projects/course-reg/storage/framework/views/4d21162d69a1e19094078a0dd3b3973d71fea765.php",
+		"/home/oshosanya/projects/course-reg/resources/views/admin/layouts/sidebar.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/admin/layouts/header.blade.php",
+		"/home/oshosanya/projects/course-reg/storage/framework/views/a73f41815d331c9890f740157cbae37d4853be29.php",
+		"/home/oshosanya/projects/course-reg/resources/views/admin/courses.blade.php",
+		"/home/oshosanya/projects/course-reg/config/app.php",
+		"/home/oshosanya/projects/course-reg/resources/views/student/login.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/admin/login.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/staff/login.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/admin/layouts/layout.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/admin/levelsEdit.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/staff/layouts/layout.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/admin/studentsEdit.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/admin/staffs.blade.php",
+		"/home/oshosanya/projects/course-reg/storage/framework/views/fa861bff1a5af2056e182296208cc87227884d7d.php",
+		"/home/oshosanya/projects/course-reg/app/Uuids.php",
+		"/home/oshosanya/projects/course-reg/app/User.php",
+		"/home/oshosanya/projects/course-reg/storage/framework/views/038205ca6b3ba66b34528ebdcb98a9dbfd9f9a23.php",
+		"/home/oshosanya/projects/course-reg/app/Unit.php",
+		"/home/oshosanya/projects/course-reg/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
+		"/home/oshosanya/projects/course-reg/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/home/oshosanya/projects/course-reg/database/migrations/2014_10_12_100000_create_password_resets_table.php",
+		"/home/oshosanya/projects/course-reg/resources/views/admin/departmentsEdit.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/admin/semestersEdit.blade.php",
+		"/home/oshosanya/projects/course-reg/public/css/style.css",
+		"/home/oshosanya/projects/course-reg/resources/views/admin/departments.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/admin/layouts/layout-empty.blade.php",
+		"/home/oshosanya/projects/course-reg/storage/framework/views/1c28a3983507caa5e44a7051496a8424c0d007a0.php",
+		"/home/oshosanya/projects/course-reg/resources/views/admin/dashboard.blade.php",
+		"/home/oshosanya/projects/course-reg/resources/views/admin/index.blade.php",
+		"/home/oshosanya/projects/my-app/public/css/style.css",
+		"/run/user/1000/gvfs/ftp:host=sowersclubng.com/sureclub/app/RecipientFirstWaiting.php",
+		"/run/user/1000/gvfs/ftp:host=sowersclubng.com/sureclub/app/Mail/DonationMade.php",
+		"/run/user/1000/gvfs/ftp:host=sowersclubng.com/sureclub/resources/views/user/register.blade.php"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"studentScore",
+			"distinctRegisteredCourseId",
+			"studentIds",
+			"courseIds",
+			"_blank",
+			"totalScore",
+			"IVvDXdYIFXq0ppfrYp_Px7YH4Mk",
+			"');\n",
+			"Ale",
+			"ale",
+			"$r",
+			">\n",
+			"student",
+			"stude",
+			"Student",
+			"staff",
+			"student",
+			"create",
+			"];\n",
+			";\n",
+			"$s",
+			"$u",
+			"    \n",
+			"student",
+			"units",
+			"course",
+			"Unit",
+			"$s",
+			"Semester",
+			"units",
+			"semester",
+			"Level",
+			"level",
+			"$l",
+			"level",
+			"Level",
+			"level",
+			"course",
+			"level",
+			"Level",
+			"level",
+			"();\n",
+			"@",
+			"6",
+			"container",
+			"date of adm",
+			"select * from schinfo",
+			"select * from sett",
+			"session",
+			"log",
+			"return"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "resources/views/admin/registerableCourses.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4408,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2959,
+								2959
+							]
+						],
+						"settings":
+						{
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								6,
+								9,
+								15,
+								37,
+								50,
+								9,
+								18,
+								198,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 969.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Http/Controllers/AdminController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18647,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11552,
+								11552
+							]
+						],
+						"settings":
+						{
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								6,
+								9,
+								15,
+								38,
+								59,
+								4,
+								179,
+								44,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6426.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/views/admin/resultSheet.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1257,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1101,
+								1101
+							]
+						],
+						"settings":
+						{
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								6,
+								28,
+								3,
+								49,
+								37,
+								4,
+								142,
+								181,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 357.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/Result.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 770,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								402,
+								402
+							]
+						],
+						"settings":
+						{
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								6,
+								10,
+								9,
+								13,
+								15,
+								4,
+								158,
+								102,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 170.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/Student.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1761,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1198,
+								1198
+							]
+						],
+						"settings":
+						{
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								6,
+								10,
+								9,
+								14,
+								37,
+								11,
+								86,
+								135,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 464.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/Course.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1277,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								752,
+								752
+							]
+						],
+						"settings":
+						{
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								5,
+								17,
+								15,
+								26,
+								12,
+								6,
+								250,
+								86,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/Grade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 327,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								6,
+								27,
+								12,
+								21,
+								40,
+								14,
+								190,
+								255,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/Cgpa.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 893,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								409,
+								409
+							]
+						],
+						"settings":
+						{
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								6,
+								27,
+								13,
+								55,
+								55,
+								8,
+								143,
+								147,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/Http/Controllers/StudentController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5729,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5208,
+								5208
+							]
+						],
+						"settings":
+						{
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								6,
+								27,
+								11,
+								58,
+								59,
+								14,
+								71,
+								31,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2448.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "resources/views/admin/results.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1394,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								741,
+								741
+							]
+						],
+						"settings":
+						{
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								6,
+								27,
+								14,
+								44,
+								0,
+								5,
+								172,
+								170,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "resources/views/admin/courses.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1694,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1105,
+								1105
+							]
+						],
+						"settings":
+						{
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								5,
+								17,
+								19,
+								53,
+								3,
+								3,
+								183,
+								86,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 255.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "resources/views/admin/coursesEdit.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 807,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								623,
+								623
+							]
+						],
+						"settings":
+						{
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								5,
+								17,
+								19,
+								40,
+								16,
+								7,
+								34,
+								68,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "resources/views/admin/levels.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1640,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								726,
+								726
+							]
+						],
+						"settings":
+						{
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								5,
+								17,
+								19,
+								58,
+								5,
+								7,
+								237,
+								125,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "resources/views/admin/layouts/sidebar.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8344,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2994,
+								2994
+							]
+						],
+						"settings":
+						{
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								5,
+								19,
+								7,
+								8,
+								40,
+								8,
+								158,
+								179,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 816.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "routes/web.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5774,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4577,
+								4577
+							]
+						],
+						"settings":
+						{
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								6,
+								24,
+								13,
+								6,
+								0,
+								10,
+								119,
+								233,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1683.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 15,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5629,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4519,
+								4519
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 106.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 17,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8765,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8765,
+								8765
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 62,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								62
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.7,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 142.0
+	},
+	"pinned_build_system": "",
+	"project": "course-reg.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"side",
+				"resources/views/admin/layouts/sidebar.blade.php"
+			],
+			[
+				"web",
+				"routes/web.php"
+			],
+			[
+				"58",
+				"storage/framework/views/58b5494325d7e437ecd495a6710e426d7602c60f.php"
+			],
+			[
+				"58b54",
+				"storage/framework/views/58b5494325d7e437ecd495a6710e426d7602c60f.php"
+			],
+			[
+				"58b",
+				"storage/framework/views/58b5494325d7e437ecd495a6710e426d7602c60f.php"
+			],
+			[
+				"a73",
+				"storage/framework/views/a73f41815d331c9890f740157cbae37d4853be29.php"
+			],
+			[
+				"4d211",
+				"storage/framework/views/4d21162d69a1e19094078a0dd3b3973d71fea765.php"
+			],
+			[
+				"adminco",
+				"app/Http/Controllers/AdminController.php"
+			],
+			[
+				"sideba",
+				"resources/views/admin/layouts/sidebar.blade.php"
+			],
+			[
+				"admon",
+				"app/Http/Controllers/AdminController.php"
+			],
+			[
+				"fa861",
+				"storage/framework/views/fa861bff1a5af2056e182296208cc87227884d7d.php"
+			],
+			[
+				"03820",
+				"storage/framework/views/038205ca6b3ba66b34528ebdcb98a9dbfd9f9a23.php"
+			],
+			[
+				"1c28",
+				"storage/framework/views/1c28a3983507caa5e44a7051496a8424c0d007a0.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"52":
+				{
+					"group": 0,
+					"index": 1
+				},
+				"57":
+				{
+					"group": 0,
+					"index": 13
+				},
+				"58":
+				{
+					"group": 0,
+					"index": 14
+				},
+				"59":
+				{
+					"group": 0,
+					"index": 9
+				},
+				"60":
+				{
+					"group": 0,
+					"index": 10
+				},
+				"61":
+				{
+					"group": 0,
+					"index": 12
+				},
+				"62":
+				{
+					"group": 0,
+					"index": 8
+				},
+				"63":
+				{
+					"group": 0,
+					"index": 2
+				},
+				"64":
+				{
+					"group": 0,
+					"index": 5
+				},
+				"66":
+				{
+					"group": 0,
+					"index": 4
+				},
+				"68":
+				{
+					"group": 0,
+					"index": 6
+				},
+				"69":
+				{
+					"group": 0,
+					"index": 7
+				},
+				"87":
+				{
+					"group": 0,
+					"index": 11
+				},
+				"88":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"90":
+				{
+					"group": 0,
+					"index": 3
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

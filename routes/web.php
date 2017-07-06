@@ -11,16 +11,9 @@
 |
 */
 
-Route::get('/admin', function () {
-    return view('admin.login');
-});
-
-Route::get('/staff', function () {
-    return view('staff.login');
-});
-
-Route::get('/student', function () {
-    return view('student.login');
+Route::get('/', function()
+{
+	return view('admin.home');
 });
 
 Route::get('/test', function()
@@ -28,10 +21,32 @@ Route::get('/test', function()
 	return Hash::make('foluke');
 });
 
-//Admin Routes
+Route::get('/result', 'ResultController@result');
+
 Route::group(['middleware' => ['web']], function () {
+	
+	Route::get('/admin', function () {
+	    return view('admin.login');
+	});
 
 	Route::post('/admin/login', 'AdminController@doLogin');
+
+	Route::get('/staff', function () {
+	    return view('staff.login');
+	});
+
+	Route::post('/staff/login', 'StaffController@doLogin');
+
+	Route::get('/student', function () {
+	    return view('student.login');
+	});
+
+	Route::post('/student/login', 'StudentController@doLogin');
+
+});
+
+//Admin Routes
+Route::group(['middleware' => ['web', 'checkadmin']], function () {
 
 	Route::get('/admin/dashboard', 'AdminController@dashboard');	
 
@@ -131,12 +146,22 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::post('/admin/userAccounts/staff/edit/{id}', 'AdminController@userAccountsStaffUpdate');
 
+    Route::get('/admin/results', 'AdminController@results');
+
+    Route::get('/admin/resultPrint', 'AdminController@resultPrint');
+
+    Route::get('/admin/logout', function()
+    {
+    	Auth::logout();
+    	return redirect('/admin')->with([
+    			'warning' => 'You have been logged out'
+    		]);
+    });
+
 });
 
 //Staff Routes
-Route::group(['middleware' => ['web']], function () {
-
-	Route::post('/staff/login', 'StaffController@doLogin');
+Route::group(['middleware' => ['web', 'checkstaff']], function () {
 
 	Route::get('/staff/dashboard', 'StaffController@dashboard');
 
@@ -148,10 +173,20 @@ Route::group(['middleware' => ['web']], function () {
 
 	Route::post('/staff/results', 'StaffController@storeResults');
 
-//Student Routes
-Route::group(['middleware' => ['web']], function () {
+	Route::get('/staff/logout', function()
+    {
+    	Auth::logout();
+    	return redirect('/staff')->with([
+    			'warning' => 'You have been logged out'
+    		]);
+    });
 
-	Route::post('/student/login', 'StudentController@doLogin');
+});
+
+//Student Routes
+Route::group(['middleware' => ['web', 'checkstudent']], function () {
+
+	Route::get('/student/account', 'StudentController@account');
 
 	Route::get('/student/dashboard', 'StudentController@dashboard');
 
@@ -160,5 +195,19 @@ Route::group(['middleware' => ['web']], function () {
 	Route::get('/student/courseRegistration', 'StudentController@courseRegistration');
 
 	Route::post('/student/courseRegistration', 'StudentController@courseRegistrationCreate');
+
+	Route::post('/student/passport', 'StudentController@passport');
+
+	Route::get('/student/result', 'StudentController@result');
+
+	Route::get('/student/resultGet', 'StudentController@resultGet');
+
+	Route::get('/student/logout', function()
+    {
+    	Auth::logout();
+    	return redirect('/student')->with([
+    			'warning' => 'You have been logged out'
+    		]);
+    });
 
 });

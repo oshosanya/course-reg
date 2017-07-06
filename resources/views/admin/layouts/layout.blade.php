@@ -17,6 +17,8 @@
 		    <!-- Content Wrapper. Contains page content -->
 		    <div class="content-wrapper">
 		    	<section class="content-header">
+		    	</section>
+		    	{{-- <section class="content-header">
 		          <h1>
 		            Dashboard
 		            <small>Control panel</small>
@@ -25,7 +27,7 @@
 		            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
 		            <li class="active">Dashboard</li>
 		          </ol>
-		        </section>
+		        </section> --}}
 		        <div class="container" style="margin-top: 10px"> 
 		        @if (count($errors) > 0)
 				    <div class="alert alert-danger alert-dismissible" role="alert">

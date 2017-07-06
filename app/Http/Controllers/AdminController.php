@@ -14,6 +14,7 @@ use \App\Faculty;
 use \App\Level;
 use \App\Semester;
 use \App\RegisterableCourse;
+use \App\Result;
 use \App\Session;
 use \App\Setting;
 use \App\Staff;
@@ -40,8 +41,14 @@ class AdminController extends Controller
     }
 
     public function dashboard()
-    {
-    	return view('admin.dashboard');
+    {   $faculties = Faculty::all();
+        $departments = Department::all();
+        $registerableCourses = RegisterableCourse::paginate(10);
+    	return view('admin.dashboard')->with([
+                'faculties' => $faculties,
+                'departments' => $departments,
+                'registerableCourses' => $registerableCourses
+            ]);
     }
 
     public function faculties()
@@ -390,7 +397,8 @@ class AdminController extends Controller
             'semesterId' => 'required|max:4',
             'levelId' => 'required|max:4',
             'unitId' => 'required|max:4',
-            'sessionId' => 'required|max:4'
+            'sessionId' => 'required|max:4',
+            'courseCode' => 'required'
         ]);
         $r = new RegisterableCourse;
         $r->id_course = $request->input('courseId');
@@ -399,6 +407,7 @@ class AdminController extends Controller
         $r->id_level = $request->input('levelId');
         $r->id_unit = $request->input('unitId');
         $r->id_session = $request->input('sessionId');
+        $r->course_code = $request->input('courseCode');
         $r->save();
         return redirect('admin/registerableCourses')->with([
                 'success' => 'Course added successfully'
@@ -556,6 +565,53 @@ class AdminController extends Controller
 
         return redirect('/admin/userAccounts/staff')->with([
                 'success' => 'Staff Account created successfully'
+            ]);
+    }
+
+    public function results()
+    {
+        $levels = Level::all();
+        $semesters = Semester::all();
+        $sessions = Session::all();
+        $departments = Department::all();
+
+        return view('admin.results')->with([
+                'levels' => $levels,
+                'semesters' => $semesters,
+                'sessions' => $sessions,
+                'departments' => $departments
+            ]);
+    }
+
+    public function resultPrint(Request $request)
+    {
+        $level = $request->input('id_level');
+        $semester = $request->input('id_semester');
+        $session = $request->input('id_session');
+        $department = $request->input('id_department');
+
+        //$request->flash();
+
+        $result = Result::where([
+                ['id_level', '=', $level],
+                ['id_semester', '=', $semester],
+                ['id_session', '=', $session],
+                ['id_department', '=', $department]
+            ])
+        ->get();
+        if($result->count()==0)
+        {
+            return redirect('/admin/result')->with(
+                [
+                    'warning' => 'No result matches the parameters provided'
+                ]);
+        }
+        return view('admin.resultSheet')->with([
+                'result' => $result,
+                'level' => $level,
+                'semester' => $semester,
+                'session' => $session,
+                'department' => $department
             ]);
     }
 }
