@@ -47,7 +47,8 @@ class AdminController extends Controller
     	return view('admin.dashboard')->with([
                 'faculties' => $faculties,
                 'departments' => $departments,
-                'registerableCourses' => $registerableCourses
+                'registerableCourses' => $registerableCourses,
+                'pageTitle' => 'Dashboard'
             ]);
     }
 
@@ -55,7 +56,8 @@ class AdminController extends Controller
     {
     	$faculties = Faculty::all();
     	return view('admin.faculties')->with([
-    			'faculties' => $faculties
+    			'faculties' => $faculties,
+                'pageTitle' => 'Faculties'
     		]);
     }
 
@@ -85,7 +87,8 @@ class AdminController extends Controller
     {
     	$faculty = Faculty::find($id);
     	return view('admin.facultiesEdit')->with([
-    			'faculty' => $faculty
+    			'faculty' => $faculty,
+                'pageTitle' => 'Edit Faculty'
     		]);
     }
 
@@ -108,7 +111,8 @@ class AdminController extends Controller
     	$faculties = Faculty::all();
     	return view('admin.departments')->with([
     			'departments' => $departments,
-    			'faculties' => $faculties
+    			'faculties' => $faculties,
+                'pageTitle' => 'Departments'
     		]);
     }
 
@@ -139,10 +143,13 @@ class AdminController extends Controller
     public function departmentsEdit($id)
     {
     	$department = Department::find($id);
+        $staffs = Staff::where('id_department', '=', $id)->get();
     	$faculties = Faculty::all();
     	return view('admin.departmentsEdit')->with([
+                'staffs' => $staffs,
     			'faculties' => $faculties,
-    			'department' => $department
+    			'department' => $department,
+                'pageTitle' => 'Edit Department'
     		]);
     }
 
@@ -151,10 +158,12 @@ class AdminController extends Controller
     	$this->validate($request, [
 	        'departmentName' => 'required|max:255',
 	        'facultyId' => 'required',
+            'courseAdviser' => 'required'
 	    ]);
     	$department = Department::find($id);
     	$department->name = $request->input('departmentName');
     	$department->id_faculty = $request->input('facultyId');
+        $department->id_user_adviser = $request->input('courseAdviser');
     	$department->save();
     	return redirect('admin/departments')->with([
     			'success' => 'Department updated successfully'
@@ -165,7 +174,8 @@ class AdminController extends Controller
     {
         $levels = Level::all();
         return view('admin.levels')->with([
-                'levels' => $levels
+                'levels' => $levels,
+                'pageTitle' => 'Academic Levels'
             ]);
     }
 
@@ -195,7 +205,8 @@ class AdminController extends Controller
     {
         $level = Level::find($id);
         return view('admin.levelsEdit')->with([
-                'level' => $level
+                'level' => $level,
+                'pageTitle' => 'Edit Academic Level'
             ]);
     }
 
@@ -216,7 +227,8 @@ class AdminController extends Controller
     {
         $courses = Course::all();
         return view('admin.courses')->with([
-                'courses' => $courses
+                'courses' => $courses,
+                'pageTitle' => 'Courses'
             ]);
     }
 
@@ -248,7 +260,8 @@ class AdminController extends Controller
     {
         $course = Course::find($id);
         return view('admin.coursesEdit')->with([
-                'course' => $course
+                'course' => $course,
+                'pageTitle' => 'Edit Course'
             ]);
     }
 
@@ -271,7 +284,8 @@ class AdminController extends Controller
     {
         $semesters = Semester::all();
         return view('admin.semesters')->with([
-                'semesters' => $semesters
+                'semesters' => $semesters,
+                'pageTitle' => 'Semesters'
             ]);
     }
 
@@ -301,7 +315,8 @@ class AdminController extends Controller
     {
         $semester = Semester::find($id);
         return view('admin.semestersEdit')->with([
-                'semester' => $semester
+                'semester' => $semester,
+                'pageTitle' => 'Edit Semester'
             ]);
     }
 
@@ -322,7 +337,8 @@ class AdminController extends Controller
     {
         $units = Unit::all();
         return view('admin.units')->with([
-                'units' => $units
+                'units' => $units,
+                'pageTitle' => 'Course Units'
             ]);
     }
 
@@ -352,7 +368,8 @@ class AdminController extends Controller
     {
         $unit = Unit::find($id);
         return view('admin.unitsEdit')->with([
-                'unit' => $unit
+                'unit' => $unit,
+                'pageTitle' => 'Edit Course Unit'
             ]);
     }
 
@@ -386,6 +403,7 @@ class AdminController extends Controller
                 'semesters' => $semesters,
                 'units' => $units,
                 'sessions' => $sessions,
+                'pageTitle' => 'Registerable Courses'
             ]);
     }
 
@@ -420,7 +438,8 @@ class AdminController extends Controller
         $users = User::where('role', '=', 3)->get();
         return view('admin.registerableCoursesAssign')->with([
                 'registerableCourse' => $registerableCourse,
-                'users' => $users
+                'users' => $users,
+                'pageTitle' => 'Assign Registerable Course'
             ]);
     }
 
@@ -442,7 +461,8 @@ class AdminController extends Controller
         return view('admin.students')->with([
                 'departments' => $departments,
                 'levels' => $levels,
-                'users' => $users 
+                'users' => $users,
+                'pageTitle' => 'Student User Account'
             ]);
     }
 
@@ -488,7 +508,8 @@ class AdminController extends Controller
         return view('admin.studentsEdit')->with([
                 'departments' => $departments,
                 'levels' => $levels,
-                'user' => $user 
+                'user' => $user,
+                'pageTitle' => 'Edit Student Account'
             ]);
     }
 
@@ -534,7 +555,8 @@ class AdminController extends Controller
         return view('admin.staffs')->with([
                 'departments' => $departments,
                 'levels' => $levels,
-                'users' => $users 
+                'users' => $users,
+                'pageTitle' => 'Staff Accounts'
             ]);
     }
 
@@ -579,7 +601,8 @@ class AdminController extends Controller
                 'levels' => $levels,
                 'semesters' => $semesters,
                 'sessions' => $sessions,
-                'departments' => $departments
+                'departments' => $departments,
+                'pageTitle' => 'Results'
             ]);
     }
 
@@ -611,7 +634,24 @@ class AdminController extends Controller
                 'level' => $level,
                 'semester' => $semester,
                 'session' => $session,
-                'department' => $department
+                'department' => $department,
             ]);
     }
+
+    // public function courseAdvisers()
+    // {
+    //     $departments = Department::all();
+    //     $staffs = Staff::all();
+    //     $levels = Level::all();
+    //     return view('admin.courseAdvisers')->with([
+    //             'departments' => $departments,
+    //             'staffs' => $staffs,
+    //             'pageTitle' => 'Course Advisers'
+    //         ]);
+    // }
+
+    // public function courseAdvisersCreate(Request $request)
+    // {
+
+    // }
 }

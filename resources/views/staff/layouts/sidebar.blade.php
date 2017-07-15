@@ -36,6 +36,12 @@
           <span>My Account</span>
         </a>
       </li>
+      <li class="treeview">
+        <a href="/staff/approveCourses">
+          <i class="fa fa-files-o"></i>
+          <span>Approve Courses</span>
+        </a>
+      </li>
       <li class="treeview" style="margin-bottom: 400px">
         <a href="/staff/courses">
           <i class="fa fa-files-o"></i>

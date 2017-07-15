@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+    	<title>CALEB UNIVERSITY</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -11,23 +12,23 @@
 	    <script type="text/javascript" src="/js/jquery.min.js"></script>
     </head>
     <body class="skin-blue sidebar-mini">
-    	<div class="wrapper">
+    	<div class="wrapper" id="app">
     		@include('admin.layouts.header')
 		    @include('admin.layouts.sidebar')
 		    <!-- Content Wrapper. Contains page content -->
 		    <div class="content-wrapper">
 		    	<section class="content-header">
 		    	</section>
-		    	{{-- <section class="content-header">
+		    	<section class="content-header">
 		          <h1>
-		            Dashboard
+		            {{ $pageTitle }}
 		            <small>Control panel</small>
 		          </h1>
 		          <ol class="breadcrumb">
 		            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-		            <li class="active">Dashboard</li>
+		            <li class="active">{{ $pageTitle }}</li>
 		          </ol>
-		        </section> --}}
+		        </section>
 		        <div class="container" style="margin-top: 10px"> 
 		        @if (count($errors) > 0)
 				    <div class="alert alert-danger alert-dismissible" role="alert">

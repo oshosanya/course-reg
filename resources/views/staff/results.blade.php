@@ -6,6 +6,10 @@
 {{-- {{ var_dump($students) }} --}}
 <div class="container">
 	<div class="row">
+		<h3>{{ \App\Course::find(\App\RegisterableCourse::find($course)->id_course)->name }}</h3>
+	</div>
+
+	<div class="row">
 		<div class="alert alert-info" role="alert">
   			<strong>Heads up!</strong> Scores with zero have been saved as 0 or have not been entered.
 		</div>

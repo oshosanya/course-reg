@@ -9,6 +9,7 @@
 				<th>LEVEL</th>
 				<th>SEMESTER</th>
 				<th>SESSION</th>
+				<th>APPROVED</th>
 			</thead>
 			<tbody>
 				@foreach($courses as $c)
@@ -18,6 +19,7 @@
 					<td>{{ \App\Level::find(\App\RegisterableCourse::find($c->id_registerable_course)->id_department)->name }}</td>
 					<td>{{ \App\Semester::find($c->id_semester)->name }}</td>
 					<td>{{ \App\Session::find($c->id_session)->name }}</td>
+					<td>@if($c->approved) APPROVED @else UNAPPROVED @endif</td>
 				</tr>
 				@endforeach
 			</tbody>

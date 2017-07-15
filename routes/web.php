@@ -150,6 +150,10 @@ Route::group(['middleware' => ['web', 'checkadmin']], function () {
 
     Route::get('/admin/resultPrint', 'AdminController@resultPrint');
 
+    Route::get('/admin/courseAdvisers', 'AdminController@courseAdvisers');
+
+    Route::post('/admin/courseAdvisers', 'AdminController@courseAdvisersCreate');
+
     Route::get('/admin/logout', function()
     {
     	Auth::logout();
@@ -172,6 +176,14 @@ Route::group(['middleware' => ['web', 'checkstaff']], function () {
 	Route::get('/staff/results', 'StaffController@results');
 
 	Route::post('/staff/results', 'StaffController@storeResults');
+
+	Route::get('/staff/approveCourses', 'StaffController@approveCourses');
+
+	Route::post('/staff/approveCourses', 'StaffController@approveCoursesStudents');
+
+	Route::get('/staff/approveCoursesForStudent', 'StaffController@approveCoursesForStudent');
+
+	Route::post('/staff/approveCoursesForStudent', 'StaffController@approveCoursesForStudentApprove');
 
 	Route::get('/staff/logout', function()
     {

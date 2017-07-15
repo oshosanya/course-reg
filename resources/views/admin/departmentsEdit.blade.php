@@ -27,6 +27,18 @@
 					    		</div>
 					    	</div>
 						</div>
+						<div class="row">
+							<div class="col-sm-8">
+					    		<div class="input-group input-group-sm col-sm-8">	
+					    			<select class="form-control" name="courseAdviser">
+					    				<option value="">COURSE ADVISER</option>
+					    				@foreach($staffs as $s)
+					    				<option value="{{ $s->id_user }}" @if($s->id_user==$department->id_user_adviser)selected="selected"@endif>{{ $s->first_name }} {{ $s->other_name }} {{ $s->last_name }}</option>
+					    				@endforeach
+					    			</select>
+					    		</div>
+					    	</div>
+						</div>
 						<div class="col-sm-4">
 							<button class="btn btn-success" type="submit">Submit</button>
 						</div>

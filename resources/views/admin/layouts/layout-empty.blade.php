@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>CALEB UNIVERSITY</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -11,9 +12,8 @@
         <link rel="stylesheet" href="/css/animate.css">
         <style type="text/css">
             #login {
-              -vendor-animation-duration: 3s;
-              -vendor-animation-delay: 4s;
-              -vendor-animation-iteration-count: infinite;
+              -webkit-animation-duration: 3s;
+              -webkit-animation-delay: 1s;
             }
         </style>
     </head>

@@ -119,6 +119,7 @@ class StudentController extends Controller
     	{
     		$registered = new RegisteredCourse;
     		$registered->id_registerable_course = $r;
+            $registered->id_department = RegisterableCourse::find($r)->id_department;
     		$registered->id_user = Auth::id();
     		$registered->id_session = $this->currentSession;
     		$registered->id_semester = $this->currentSemester;

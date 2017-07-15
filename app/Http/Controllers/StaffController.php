@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use DB;
 use App\Course;
+use App\Level;
 use App\RegisterableCourse;
 use App\RegisteredCourse;
 use App\Result;
@@ -24,6 +25,7 @@ class StaffController extends Controller
 
     public function dashboard()
     {
+        //dd(Auth::id());
         $courses = RegisterableCourse::where('id_user', '=', Auth::id())->get();
     	return view('staff.dashboard')->with([
                 'courses' => $courses
@@ -72,23 +74,40 @@ class StaffController extends Controller
     	// 	['registered_courses.id_session', '=', $this->currentSession]
     	// 	])
     	// ->get();
-    	// DB::enableQueryLog();
+    	DB::enableQueryLog();
         $this->request = $request;
-    	$studentsForCourse = DB::table('students')
-    	->leftJoin('results', function ($join) {
-            $join->on('students.id_user', '=', 'results.id_user')
+    	// $studentsForCourse = DB::table('students')
+    	// ->leftJoin('results', function ($join) {
+     //        $join->on('students.id_user', '=', 'results.id_user')
+     //            ->where([
+     //            		['results.id_semester', '=', $this->currentSemester],
+	    // 				['results.id_session', '=', $this->currentSession],
+     //                    ['results.id_registerable_course', '=', $this->request->input('course')]
+     //             	]);
+     //    })
+    	// ->where([
+    	// 		['students.id_level', '=', $request->input('level')],
+    	// 	])
+    	// ->select('students.*', 'results.ca', 'results.exam')
+    	// ->get();
+        $studentsForCourse = DB::table('registered_courses')
+        ->leftJoin('results', function ($join) {
+            $join->on('registered_courses.id_user', '=', 'results.id_user')
                 ->where([
-                		['results.id_semester', '=', $this->currentSemester],
-	    				['results.id_session', '=', $this->currentSession],
+                        ['results.id_semester', '=', $this->currentSemester],
+                        ['results.id_session', '=', $this->currentSession],
                         ['results.id_registerable_course', '=', $this->request->input('course')]
-                 	]);
+                    ]);
         })
-    	->where([
-    			['students.id_level', '=', $request->input('level')],
-    		])
-    	->select('students.*', 'results.ca', 'results.exam')
-    	->get();
-    	// dd(DB::getQueryLog());
+        ->where([
+                ['registered_courses.id_registerable_course', '=', $this->request->input('course')],
+                ['registered_courses.id_level', '=', $request->input('level')],
+                ['registered_courses.approved', '=', 1]
+            ])
+        ->select('registered_courses.*', 'results.ca', 'results.exam')
+        ->get();
+        //DB::select(DB::raw("select rst.ca, rst.exam, c.id_user from (select * from registered_courses where id_level=$request->input('level') and approved=1 and id_semester=$this->currentSemester) c left join (select * from results where id_session=$this->currentSession and id_semester=$this->currentSemester and id_registerable_course=2) rst on rst.id_user=c.id_user"))
+    	//dd(DB::getQueryLog());
     	// $users = DB::table('users')
      //        ->join('contacts', 'users.id', '=', 'contacts.user_id')
      //        ->join('orders', 'users.id', '=', 'orders.user_id')
@@ -96,7 +115,8 @@ class StaffController extends Controller
      //        ->get();
     	//return response()->json($studentsForCourse);
     	return view('staff.results')->with([
-    			'students' => $studentsForCourse
+    			'students' => $studentsForCourse,
+                'course' => $request->input('course')
     		]);
     }
 
@@ -154,5 +174,86 @@ class StaffController extends Controller
     		'success' => 'Scores updated'
     		]);
     	
+    }
+
+    public function approveCourses()
+    {
+        $levels = Level::all();
+        return view('staff.approveCourses')->with([
+                'levels' => $levels
+            ]);
+    }
+
+    public function approveCoursesStudents(Request $request)
+    {
+        $levels = Level::all();
+        $level = $request->input('levelId');
+        $staffDepartment = Staff::where('id_user', '=', Auth::id())->first()->id_department;
+        $students = Student::where([
+                ['id_department', '=', $staffDepartment],
+                ['id_level', '=', $level]
+            ])->get();
+
+        return view('staff.approveCourses')->with([
+                'levels' => $levels,
+                'level' => $level,
+                'department' => $staffDepartment,
+                'students' => $students
+            ]);
+    }
+
+    public function approveCoursesForStudent(Request $request)
+    {
+        $user = $request->input('id_user');
+        $department = $request->input('id_department');
+        $level = $request->input('id_level');
+
+        $studentCourses = RegisteredCourse::where([
+                ['id_user', '=', $user],
+                ['id_department', '=', $department],
+                ['id_semester', '=', $this->currentSemester],
+                ['id_session', '=', $this->currentSession],
+                ['id_level', '=', $level]
+            ])
+        ->get();
+
+        return view('staff.studentCourses')->with([
+                'studentCourses' => $studentCourses
+            ]);
+    }
+
+    public function approveCoursesForStudentApprove(Request $request)
+    {
+        $user = $request->input('id_user');
+        $department = $request->input('id_department');
+        $level = $request->input('id_level');
+
+        $studentCourses = RegisteredCourse::where([
+                ['id_user', '=', $user],
+                ['id_department', '=', $department],
+                ['id_semester', '=', $this->currentSemester],
+                ['id_session', '=', $this->currentSession],
+                ['id_level', '=', $level]
+            ])
+        ->get();
+
+        foreach($studentCourses as $s)
+        {
+            $course = RegisteredCourse::find($s->id);
+            $course->approved = 0;
+            $course->save();
+        }
+
+        $courses = $request->input('registeredCourseId');
+        foreach($courses as $c)
+        {
+            $course = RegisteredCourse::find($c);
+            $course->approved = 1;
+            $course->save();
+        }
+
+        return back()->with([
+                'success' => 'Courses Approved'
+            ]);
     }
 }
