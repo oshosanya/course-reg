@@ -47,10 +47,11 @@
 @endsection
 @section('script')
 <style>
-body{
-    background: url(http://mymaplist.com/img/parallax/back.png);
-	background-color: #444;
-    background: url(http://mymaplist.com/img/parallax/pinlayer2.png),url(http://mymaplist.com/img/parallax/pinlayer1.png),url(http://mymaplist.com/img/parallax/back.png);    
+body {
+    background: url(/img/caleb_university.jpg);
+  	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 .vertical-offset-100{

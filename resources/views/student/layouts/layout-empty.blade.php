@@ -13,6 +13,7 @@
     <body class="skin-blue sidebar-mini">
     	@yield('content')
     </body>
+@yield('script')
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
     <script src="/js/admin.min.js" type="text/javascript"></script>
