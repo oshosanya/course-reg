@@ -590,6 +590,49 @@ class AdminController extends Controller
             ]);
     }
 
+    public function userAccountsStaffEdit($id)
+    {
+        $levels = Level::all();
+        $user = User::find($id);
+        $departments = Department::all();
+        return view('admin.staffsEdit')->with([
+                'departments' => $departments,
+                'levels' => $levels,
+                'user' => $user,
+                'pageTitle' => 'Edit Student Account'
+            ]);
+    }
+
+    public function userAccountsStaffUpdate(Request $request, $id)
+    {
+        $this->validate($request, [
+            'staffLastName' => 'required|max:32',
+            'staffFirstName' => 'required|max:32',
+            'staffOtherName' => 'required|max:32',
+            'staffEmail' => 'required|email|max:64',
+            'staffDepartment' => 'required',
+        ]);
+
+        $user = User::find($id);
+        $user->email = $request->input('staffEmail');
+        $user->username = strtolower($request->input('staffLastName').$request->input('staffFirstName'));
+        $user->password = Hash::make($request->input('staffLastName'));
+        $user->save();
+
+        $s = Staff::where('id_user', '=', $id)->first();
+        $staff = Staff::find($s->id);
+        $staff->last_name = $request->input('staffLastName');
+        $staff->first_name = $request->input('staffFirstName');
+        $staff->other_name = $request->input('staffOtherName');
+        $staff->id_user = $user->id;
+        $staff->id_department = $request->input('staffDepartment');
+        $staff->save();
+
+        return redirect('/admin/userAccounts/staff')->with([
+                'success' => 'Staff Account updated successfully'
+            ]);
+    }
+
     public function results()
     {
         $levels = Level::all();
@@ -624,7 +667,7 @@ class AdminController extends Controller
         ->get();
         if($result->count()==0)
         {
-            return redirect('/admin/result')->with(
+            return redirect('/admin/results')->with(
                 [
                     'warning' => 'No result matches the parameters provided'
                 ]);
