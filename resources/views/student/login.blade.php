@@ -2,8 +2,8 @@
 @section('content')
 <script src="http://mymaplist.com/js/vendor/TweenLite.min.js"></script>
 <!-- This is a very simple parallax effect achieved by simple CSS 3 multiple backgrounds, made by http://twitter.com/msurguy -->
-
-<div class="container">
+<div class="background-image"></div>
+<div class="container login">
     <div class="row vertical-offset-100">
     	<div class="col-md-4 col-md-offset-4">
     		<div class="panel panel-default">
@@ -42,11 +42,38 @@
 @endsection
 @section('script')
 <style>
+.background-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    display: block;
+    background-image: url(/img/caleb_university.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 1400px;
+    height: 800px;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.login {
+    z-index: 999;
+    position: fixed;
+}
+
 body {
-    background: url(/img/student.jpg);
+    /*background: url(/img/caleb_university.jpg);
   	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;*/
 }
 
 .vertical-offset-100{

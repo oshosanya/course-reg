@@ -54,7 +54,7 @@
 						<td>{{ $d->id }}</td>
 						<td>{{ $d->name }}</td>
 						<td>{{ \App\Faculty::find($d->id_faculty)->name }}</td>
-						<td>{{ \App\Staff::where('id_user', '=', $d->id_user_adviser)->first()->first_name }} {{ \App\Staff::where('id_user', '=', $d->id_user_adviser)->first()->other_name }} {{ \App\Staff::where('id_user', '=', $d->id_user_adviser)->first()->last_name }}</td>
+						<td>{{ @\App\Staff::where('id_user', '=', $d->id_user_adviser)->first()->first_name }} {{ @\App\Staff::where('id_user', '=', $d->id_user_adviser)->first()->other_name }} {{ @\App\Staff::where('id_user', '=', $d->id_user_adviser)->first()->last_name }}</td>
 						<td>{{ $d->updated_at }}</td>
 						<td><a href="/admin/departments/edit/{{ $d->id }}">Edit</a>|<a href="/admin/departments/delete/{{ $d->id }}" class="deleteBtn">Delete</a></td>
 					</tr>
